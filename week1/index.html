@@ -1,71 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dommeti Chandana - Resume</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dommeti Chandana • Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Dommeti Chandana</h1>
-      <p class="contact">
-        Hyderabad | <a href="mailto:myidchandana@gmail.com">myidchandana@gmail.com</a> | 77949 58527<br>
-        <a href="https://www.linkedin.com/in/chandana-dommeti-90355b291/">LinkedIn</a> | <a href="https://github.com/ChandanaDommeti">GitHub</a>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand">Chandana</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu">☰</button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+        <button id="themeBtn" class="btn btn--ghost" type="button" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero section">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow">Hyderabad • AI/ML & Web</p>
+        <h1>Hi, I'm <span class="accent">Dommeti Chandana</span></h1>
+        <p class="subtitle">B.Tech CSE (AI & ML) student passionate about building ML solutions and clean web experiences.</p>
+        <div class="cta">
+          <a class="btn" href="Resume.pdf" download>Download Resume</a>
+          <a class="btn btn--ghost" href="#projects">View Projects</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/chandana-dommeti-90355b291/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="icon-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.79V21H9z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://github.com/ChandanaDommeti" target="_blank" rel="noreferrer" aria-label="GitHub" class="icon-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.12-1.52-1.12-1.52-.92-.64.07-.63.07-.63 1.02.07 1.55 1.07 1.55 1.07.9 1.58 2.36 1.12 2.94.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.2 9.2 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .26.18.58.69.48A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero__pfp">
+        <img src="profile.jpeg" alt="Profile picture" class="pfp" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <div class="container card">
+      <h2>About</h2>
+      <p>
+        I'm a Computer Science student (AI & ML) who enjoys turning data into useful products and building
+        simple, fast web apps. I focus on clear problem statements, solid baselines, and clean code.
       </p>
-    </header>
-
-    <section>
-      <h2>Education</h2>
-      <p><b>Institute of Aeronautical Engineering, Hyderabad</b> (2023 – 2027)<br>B.Tech in CSE (AI & ML), CGPA: 8.73/10</p>
-      <p><b>Narayana Junior College, Hyderabad</b> (2021 – 2023)<br>Percentage: 98.2%</p>
-      <p><b>Vivekananda Convent High School, Hyderabad</b> (2010 – 2021)<br>CGPA: 10/10</p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <p><b>AI Engineer Intern, Edunet Foundation</b> (May 2025)<br>
-      - Developed a Sentiment Analysis System.<br>
-      - Deployed ML models using Azure ML Studio.</p>
-
-      <p><b>AI-ML Virtual Internship, EduSkills</b> (Apr 2024 – Jun 2024)<br>
-      - Learned supervised/unsupervised learning and TensorFlow.<br>
-      - Explored Google tools & platforms.</p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <p><b>Forest Fire Detection</b> - <a href="https://github.com/ChandanaDommeti/Forest-Fire-Detection">GitHub</a><br>
-      Built a CNN model with 83% accuracy using TensorFlow and Keras.</p>
-
-      <p><b>Image Steganography</b> - <a href="https://github.com/ChandanaDommeti/image-steganography-web">GitHub</a><br>
-      Flask web app to hide/reveal messages in images, deployed with Docker & Kubernetes.</p>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <p><b>Languages:</b> Python, Java, C#<br>
-      <b>Frontend:</b> HTML, CSS, JavaScript, React<br>
-      <b>Backend:</b> MySQL, PostgreSQL, Node.js, MongoDB<br>
-      <b>Tools:</b> VS Code, Jupyter, Eclipse, GitHub, AWS, Azure, Streamlit</p>
-    </section>
-
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>NPTEL - Joy of Computing with Python</li>
-        <li>NPTEL - Programming in Java</li>
-        <li>NPTEL - DBMS</li>
-        <li>freeCodeCamp - Foundational C#</li>
+      <ul class="facts">
+        <li>📍 Hyderabad</li>
+        <li>📧 <a href="mailto:myidchandana@gmail.com">myidchandana@gmail.com</a></li>
+        <li>📱 77949 58527</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <p>© 2025 Dommeti Chandana</p>
-      <a class="btn" href="#" onclick="downloadPDF()">Download PDF</a>
-    </footer>
-  </div>
-  <script src="script.js"></script>
+  <section id="education" class="section reveal">
+    <div class="container card">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="tl__item">
+          <h3>Institute of Aeronautical Engineering, Hyderabad, Telangana <span>2023 – Expected 2027</span></h3>
+          <p>B.Tech in Computer Science & Engineering (AI & ML). <strong>CGPA:</strong> 8.73/10</p>
+        </div>
+        <div class="tl__item">
+          <h3>Narayana Junior College, Hyderabad, Telangana <span>2021 – 2023</span></h3>
+          <p>Senior Secondary (MPC). <strong>Percentage:</strong> 98.2%</p>
+        </div>
+        <div class="tl__item">
+          <h3>Vivekananda High School, Hyderabad, Telangana <span>2010 – 2021</span></h3>
+          <p>Secondary School (SSC). <strong>CGPA:</strong> 10.0/10</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section reveal">
+    <div class="container card">
+      <h2>Experience</h2>
+      <div class="exp">
+        <div class="exp__item">
+          <h3>AI Engineer Intern — Edunet Foundation <span>May 2025</span></h3>
+          <ul>
+            <li>Developed a sentiment analysis system for classifying user reviews (positive/negative/neutral).</li>
+            <li>Implemented ML models and deployed them using Azure Machine Learning Studio.</li>
+          </ul>
+        </div>
+        <div class="exp__item">
+          <h3>AI-ML Virtual Intern — EduSkills <span>Apr 2024 – Jun 2024</span></h3>
+          <ul>
+            <li>Hands-on with supervised & unsupervised learning, model evaluation, TensorFlow.</li>
+            <li>Explored Google tools and platforms as part of the India Edu Program.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2 class="container__title">Projects</h2>
+      <div class="grid">
+        <article class="project card">
+          <h3>Forest Fire Detection</h3>
+          <p>TensorFlow/Keras CNN to detect wildfires from images, reaching ~83% accuracy with augmentation & dropout.</p>
+          <div class="tags"><span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>Scikit‑learn</span></div>
+          <a class="btn btn--small" href="https://github.com/ChandanaDommeti/Forest-Fire-Detection" target="_blank" rel="noreferrer">GitHub</a>
+        </article>
+        <article class="project card">
+          <h3>Image Steganography</h3>
+          <p>Flask web app to hide/reveal secret messages using LSB steganography. Dockerized & deployed with manifests.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>Docker</span><span>Kubernetes</span></div>
+          <a class="btn btn--small" href="https://image-steganography-web.onrender.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <div class="container card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h4>Languages</h4>
+          <div class="chips"><span>Python</span><span>Java</span><span>C#</span></div>
+        </div>
+        <div>
+          <h4>Frontend</h4>
+          <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
+        </div>
+        <div>
+          <h4>Backend & DB</h4>
+          <div class="chips"><span>Node.js</span><span>MySQL</span><span>PostgreSQL</span></div>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <div class="chips"><span>VS Code</span><span>Jupyter</span><span>Eclipse</span><span>GitHub</span><span>AWS</span><span>Azure</span><span>Streamlit</span><span>PyCharm</span><span>Cursor</span><span>Docker</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs" class="section reveal">
+    <div class="container card">
+      <h2>Certifications</h2>
+      <ul class="list">
+        <li>NPTEL — The Joy of Computing using Python</li>
+        <li>NPTEL — Programming in Java</li>
+        <li>NPTEL — Database Management System</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <div class="container card">
+      <h2>Contact</h2>
+      <form id="contactForm" class="form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="How can I help?" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <a class="btn btn--ghost" href="mailto:myidchandana@gmail.com">Email Directly</a>
+      </form>
+    </div>
+  </section>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© 2025 Dommeti Chandana</small>
+    </div>
+  </footer>
 </body>
 </html>
